@@ -14,9 +14,23 @@ data.to_csv('sample_data.csv', index=False)
 
 class DataLoader:
     def __init__(self, data_source):
+         """
+        Initializes the DataLoader object with the provided data source.
+
+        Parameters:
+        - data_source: str
+            The file path or URL from which data will be loaded.
+        """
         self.data_source = data_source
 
     def load_data(self):
+        """
+        Loads data from the specified data source.
+
+        Returns:
+        - DataFrame
+            A [pandas DataFrame](https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe) containing the loaded data.
+        """
         return pd.read_csv(self.data_source)
 
 class DataCleaner:

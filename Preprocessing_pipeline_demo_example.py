@@ -29,7 +29,7 @@ class DataLoader:
 
         Returns:
         - DataFrame
-            A [pandas DataFrame](https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe) containing the loaded data.
+            A pandas DataFrame containing the loaded data.
         """
         return pd.read_csv(self.data_source)
 

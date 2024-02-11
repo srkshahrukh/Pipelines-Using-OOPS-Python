@@ -35,9 +35,18 @@ class DataLoader:
 
 class DataCleaner:
     def __init__(self):
+        """
+        Initializes the DataCleaner object.
+        This class is responsible for cleaning the data by removing NaN (missing) values.
+
+        Parameters:
+        None
+        """
         pass
 
     def clean_data(self, data):
+        
+        
         # For simplicity, let's assume we are dropping NaN values
         cleaned_data = data.dropna()
         return cleaned_data

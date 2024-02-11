@@ -45,7 +45,17 @@ class DataCleaner:
         pass
 
     def clean_data(self, data):
-        
+        """
+        Cleans the input data by removing rows containing NaN values.
+
+        Parameters:
+        - data: DataFrame
+            The input pandas DataFrame to be cleaned.
+
+        Returns:
+        - DataFrame
+            A pandas DataFrame with NaN values removed.
+        """
         
         # For simplicity, let's assume we are dropping NaN values
         cleaned_data = data.dropna()

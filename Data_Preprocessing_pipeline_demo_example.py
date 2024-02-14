@@ -63,6 +63,13 @@ class DataCleaner:
 
 class DataEncoder:
     def __init__(self):
+         """
+        Initializes the DataEncoder object.
+        This class is responsible for encoding categorical variables into numerical representations.
+
+        Parameters:
+        None
+        """
         pass
 
     def encode_data(self, data):
